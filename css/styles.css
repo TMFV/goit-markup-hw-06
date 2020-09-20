@@ -785,6 +785,7 @@ textarea {
   resize: none;
   height: 120px;
   padding-left: 10px;
+  padding-top: 5px;
 }
 
 .form-label {
@@ -801,9 +802,10 @@ textarea {
   letter-spacing: 0.01em;
 
   color: #757575;
-  transition-property: color;
-  transition-duration: 250ms;
 }
+/*transition-property: color;
+  transition-duration: 250ms;
+}*/
 /*demo  for move label
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
@@ -823,9 +825,25 @@ textarea {
   color: var(--Logo-blue-color);
   border-color: var(--Logo-blue-color);
 }
+/*
 .form-div:focus-within > .form-label {
   color: var(--Logo-blue-color);
 }
-.form-div:focus-within > .form-input {
+*/
+.form-input:focus {
   border: 1px solid #2196f3;
+}
+.apply-div {
+  padding-top: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
