@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--goit-markup-hw-05 DENYS TYMOFIEIEV-->
+<!--goit-markup-hw-06 DENYS TYMOFIEIEV-->
 <!--Главная страница Студия-->
 <html lang="ru">
   <head>
@@ -363,18 +363,75 @@
         </div>
       </section>
       <!--Footer area - down page-->
-      <!--Model window-->
-      <div class="backdrope is-hidden" data-modal>
+      <!--Modal window-->
+      <!--Форма-->
+      <form class="backdrope is-hidden" data-modal>
         <div class="modal">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            et sit animi mollitia quasi voluptate rem quod, facilis odit nisi
-            exercitationem fugiat enim optio earum vero reprehenderit libero hic
-            blanditiis.
-          </p>
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <!--Input NAME-->
+          <div class="form-div">
+            <input
+              class="form-input"
+              name="name"
+              type="text"
+              id="name"
+              placeholder=" "
+            />
+            <label class="form-label" for="name">Имя</label>
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-form-name"></use>
+            </svg>
+          </div>
+          <!--Input phone-->
+          <div class="form-div">
+            <input
+              class="form-input"
+              name="phone"
+              type="tel"
+              id="tel"
+              placeholder=" "
+            />
+            <label class="form-label" for="tel">Телефон</label>
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-form-phone"></use>
+            </svg>
+          </div>
+          <!--Input mail-->
+          <div class="form-div">
+            <input
+              class="form-input"
+              name="mail"
+              type="email"
+              id="email"
+              placeholder=" "
+            />
+            <label class="form-label" for="email">Почта</label>
+            <svg class="form-icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-form-mail"></use>
+            </svg>
+          </div>
+          <!--Input comment-->
+          <div class="form-div">
+            <textarea
+              class="form-input form-com"
+              name="comment"
+              id="comment"
+              rows="4"
+              placeholder="Введите текст"
+            >
+            </textarea>
+            <label class="form-label" for="comment">Комментарий</label>
+          </div>
+          <div>
+            <input type="checkbox" name="apply" id="apply" />
+            <label for="apply"
+              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit">Отправить</button>
           <button data-modal-close>Закрыть</button>
         </div>
-      </div>
+      </form>
     </main>
     <footer>
       <!--Logo links in the header-->

@@ -726,19 +726,106 @@ section > div > ul::backdrop {
 }
 
 .modal {
-  width: 300px;
-  height: 300px;
+  width: 528px;
+  height: 581px;
   text-align: center;
-  padding: 15px;
-  border: 3px solid #afb1b9;
-  border-radius: 10px;
-  color: #212121;
-  background-color: #afb1b8;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: var(--Logo-white-color);
 
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   position: absolute;
   top: -25%;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+}
+form {
+  padding: 0%;
+  margin: 0%;
+}
+form > div > h2 {
+  margin-top: 40px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--h2-text-color);
+}
+.form-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  padding-left: 30px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+}
+textarea {
+  margin: 0%;
+}
+.form-com {
+  resize: none;
+  height: 120px;
+  padding-left: 10px;
+}
+
+.form-label {
+  position: absolute;
+  transform: translateX(0px) translateY(10px);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+}
+/*demo  for move label
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+}
+*/
+
+.form-icon {
+  position: absolute;
+  transform: translateX(14px) translateY(350%);
+  transition-property: fill;
+  transition-duration: 250ms;
+}
+.form-div:focus-within > .form-icon
+/*.form-div:focus-within > .form-input,
+.form-div:focus-within > .form-label*/ {
+  fill: var(--Logo-blue-color);
+  color: var(--Logo-blue-color);
+  border-color: var(--Logo-blue-color);
+}
+.form-div:focus-within > .form-label {
+  color: var(--Logo-blue-color);
+}
+.form-div:focus-within > .form-input {
+  border: 1px solid #2196f3;
 }
