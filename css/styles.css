@@ -847,3 +847,25 @@ textarea {
 
   color: #757575;
 }
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+.icon-f {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  transform: translateY(8px);
+}
+.checkbox:checked + .icon-f {
+  border-color: var(--Logo-blue-color);
+  background-color: var(--Logo-blue-color);
+  background-image: url("../images/form-icons/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
