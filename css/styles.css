@@ -728,9 +728,11 @@ section > div > ul::backdrop {
 .modal {
   width: 528px;
   height: 581px;
+
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
+
   background-color: var(--Logo-white-color);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -833,6 +835,8 @@ textarea {
   border: 1px solid #2196f3;
 }
 .apply > span {
+  display: inline-block;
+  margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -841,6 +845,8 @@ textarea {
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+}
+.apply a {
 }
 .checkbox {
   padding-top: 20px;
@@ -851,12 +857,11 @@ textarea {
   position: absolute;
 }
 .icon-f {
-  display: flex;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
-  transform: translateY(8px);
+  transform: translateY(2px);
 }
 .checkbox:checked + .icon-f {
   border-color: var(--Logo-blue-color);
@@ -864,4 +869,47 @@ textarea {
   background-image: url("../images/form-icons/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
+}
+.subm {
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  background: var(--Logo-blue-color);
+  border-color: var(--Logo-blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--Logo-white-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+.subm:hover,
+.subm:focus {
+  background-color: #188ce8;
+}
+.close-f {
+  position: relative;
+}
+.xclose {
+  position: absolute;
+  padding: 0%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--Logo-white-color);
+  transform: translateX(228px) translateY(-542px);
+  transition-property: fill;
+  transition-duration: 250ms;
+}
+.xclose:hover,
+.xclose:focus {
+  fill: var(--Logo-blue-color);
 }

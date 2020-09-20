@@ -422,17 +422,23 @@
             </textarea>
             <label class="form-label" for="comment">Комментарий</label>
           </div>
-          <!--<div class="apply-div">!-->
-            
-            <label for="apply"
-              >
-              <input class="checkbox" type="checkbox" name="apply" id="apply" />
-              <span class="icon-f"></span>
-              <span>Соглашаюсь с рассылкой и принимаю</span> <a href="">Условия договора</a>
-            </label>
+          <!--<div class="apply-div">-->
+
+          <label class="apply" for="apply">
+            <input class="checkbox" type="checkbox" name="apply" id="apply" />
+            <span class="icon-f"></span>
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a href=""><u>Условия договора</u></a>
+          </label>
+
+          <button class="subm" type="submit">Отправить</button>
+          <div class="close-f">
+            <button class="xclose" data-modal-close>
+              <svg class="icon-close" width="11" height="11">
+                <use href="./images/sprite.svg#icon-form-close"></use>
+              </svg>
+            </button>
           </div>
-          <button type="submit">Отправить</button>
-          <button data-modal-close>Закрыть</button>
         </div>
       </form>
     </main>
