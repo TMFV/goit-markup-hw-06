@@ -732,7 +732,6 @@ section > div > ul::backdrop {
   padding-left: 40px;
   padding-right: 40px;
   background-color: var(--Logo-white-color);
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -833,21 +832,18 @@ textarea {
 .form-input:focus {
   border: 1px solid #2196f3;
 }
-.apply-div {
-  padding-top: 20px;
-
+.apply > span {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   /* identical to box height, or 171% */
-
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 .checkbox {
+  padding-top: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
