@@ -739,7 +739,7 @@ section > div > ul::backdrop {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: -25%;
+  top: 221px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -766,6 +766,10 @@ form > div > h2 {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+input,
+textarea {
+  outline: none;
 }
 .form-input {
   display: flex;
