@@ -947,7 +947,14 @@ textarea {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  transition-property: border;
+  transition-duration: 250ms;
 }
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border: 1px solid #2196f3;
+}
+
 .subscribe-button {
   display: flex;
   justify-content: center;
